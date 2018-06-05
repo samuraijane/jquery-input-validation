@@ -1,0 +1,34 @@
+{
+  "name": "jquery-input-validation",
+  "version": "1.0.0",
+  "description": "This application shows students learning front-end validation some of the logic we can use to safely receive input from the user and how to check for a properly-formatted email address. The UI employs input fields for a username, which must be an email address, and a password.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuraijane/jquery-input-validation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuraijane/jquery-input-validation/issues"
+  },
+  "homepage": "https://github.com/samuraijane/jquery-input-validation#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
