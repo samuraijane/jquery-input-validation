@@ -1,0 +1,101 @@
+.narea {
+  padding: 20px;
+}
+
+.nusername {
+  background: AliceBlue;
+}
+
+.npassword {
+  background: Lavender;
+}
+
+.login {
+  background: $ctaColor;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $small;
+  text-transform: uppercase;
+  @include transition(600ms);
+  &:hover {
+    background: $warningColor;
+  }
+}
+
+.messages {
+  margin: 8px 0;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  @include transition(1s);
+  &.active {
+    max-height: 1000px;
+  }
+}
+
+
+//----------------------------------------------------------------------------
+//  Removed
+//----------------------------------------------------------------------------
+
+li {
+  .removed & {
+
+  }
+}
+
+span {
+  .removed & {
+    color: $warningColor;
+  }
+}
+
+//----------------------------------------------------------------------------
+//  Replaced
+//----------------------------------------------------------------------------
+
+li {
+  .replaced & {
+    border: 1px solid $goodColor;
+    width: 90px;
+  }
+}
+
+span {
+  .replaced & {
+    color: $goodColor;
+    display: block;
+  }
+}
+
+
+//----------------------------------------------------------------------------
+//  Buttons
+//----------------------------------------------------------------------------
+.nbuttons {
+
+}
+
+.btn {
+  background: $ctaColor;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $small;
+  margin-right: 14px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  @include transition(600ms);
+  &:hover {
+    background: $warningColor;
+  }
+}
+
+.login {
+
+}
+
+.reset {
+
+}
