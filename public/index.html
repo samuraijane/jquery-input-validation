@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Input Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="narea nusername">
+      <input id="usernameInput" name="username" placeholder="Username" type="text" />
+      <div class="messages">
+        <h5>These characters have been removed completely from the username because they are not allowed:</h5>
+        <ul class="removed dynamic" id="t-usernameCharsRemoved"></ul>
+        <h5>These characters are allowed in a username. HTML entity codes are provided for reference only:</h5>
+        <ul class="replaced dynamic" id="t-usernameCharsReplaced"></ul>
+        <h5>The sanitized username is:</h5>
+        <div class="outputs dynamic" id="t-outputuser"></div>
+      </div>
+    </div>
+
+    <div class="narea npassword">
+      <input id="passwordInput" name="password" placeholder="Password" type="text" />
+      <div class="messages" id="t-messagepassword">
+        <h5>These characters have been removed completely from the password because they are not allowed:</h5>
+        <ul class="removed dynamic" id="t-passwordCharsRemoved"></ul>
+        <h5>These characters have been replaced by their respective HTML entity codes:</h5>
+        <ul class="replaced dynamic" id="t-passwordCharsReplaced"></ul>
+        <h5>The sanitized password is:</h5>
+        <div class="outputs dynamic" id="t-outputpassword"></div>
+      </div>
+    </div>
+
+    <div class="narea nbuttons">
+      <div class="btn login" id="t-login">Login</div>
+      <div class="btn reset" id="t-reset">Reset</div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/lodash/lodash.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
